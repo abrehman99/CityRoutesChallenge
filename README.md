@@ -1,7 +1,7 @@
 # CityRoutesChallenge
-The goal of this simple app is to calculate 
+The goal of this app is to calculate 
 shortest paths between cities provided a set 
-of cities and their connections. The app is intended to be easy to understand and work with. It also should allow easy extension of the functionalities.
+of cities and their connections. The app is intended to be easy to understand and extend.
 
 **How to use**
 
@@ -15,13 +15,13 @@ Provide following parameters:
 _If only "startCity" is provided the application will compute and
  respond with the routes to every city starting from "startCity"._
 
-_If both parameters are provided the application will compute and return the shortest path between the two cities including the full route._
+_If both parameters are provided the application will compute and return the shortest path between the two cities indicating the full route._
 
 
 
 **Data constraints**
 
-- The application allows the following cities:
+- The application only allows the following cities:
     
       $cities=['Logroño','Zaragoza','Teruel','Madrid','Lleida','Alicante','Castellón','Segovia','Ciudad Real'];
       
