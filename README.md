@@ -1,6 +1,9 @@
 # CityRoutesChallenge
- 
-**How to use:**
+The goal of this simple app is to calculate 
+shortest paths between cities provided a set 
+of cities and their connections. The app is intended to be easy to understand and work with. It also should allow easy extension of the functionalities.
+
+**How to use**
 
 Make a GET petition to the root of the application.
 Provide following parameters:
@@ -39,5 +42,4 @@ _If both parameters are provided the application will compute and return the sho
               ];
      
       
-- If we want the check the direct connection from 'Teruel' to 'Logroño' we will look at the first element of the third element in $connections because 'Logroño' is at the first place in $cities
     
