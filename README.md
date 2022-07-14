@@ -42,4 +42,11 @@ _If both parameters are provided the application will compute and return the sho
               ];
      
       
-    
+
+**How it is done**
+
+1. The entry point to the application is index.php located in the project root.
+2. Index.php validates the request and forwards to the controller.
+3. The controller validates the input and uses an implementation of libraries/IShortestRouteCalc interface to compute the shortest routes/paths. The data used for these calculations is gathered from the model.
+3.1.  For now the only implementation of IShortestRouteCalc available is DijkstraShortestRoute. But in the future we could implement other algorithms such as Belman-Ford, etc.
+4. The response is handled via a helper class to easily switch between different response formats. For now the main format used is JSON.
