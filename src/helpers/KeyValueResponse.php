@@ -36,11 +36,13 @@ class KeyValueResponse
 
     /**
      * @param $key
-     * @return mixed
+     * @return mixed|null
      */
     public function getDataByKey($key)
     {
-        return $this->response[$key];
+        if(isset($this->response[$key])) return $this->response[$key];
+
+        return null;
     }
 
 
